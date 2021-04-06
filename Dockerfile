@@ -2,5 +2,5 @@
 FROM docker.io/jpf91/fedora-systemd
 
 RUN microdnf install \
-    borgbackup && \
+    borgbackup openssh-clients && \
     microdnf clean all
